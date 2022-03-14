@@ -1,0 +1,38 @@
+{
+  "name": "@janeirodigital/solid-redis-token-storage",
+  "version": "0.0.1",
+  "description": "A Redis backed storage for solid-client-authn-js",
+  "main": "dist/index.js",
+  "lsd:module": "https://linkedsoftwaredependencies.org/bundles/npm/@janeirodigital/solid-redis-token-storage/^0.0.0/components/context.jsonld",
+  "lsd:importPaths": {
+    "https://linkedsoftwaredependencies.org/bundles/npm/@janeirodigital/solid-redis-token-storage/^0.0.0/components/":  "dist/components/",
+    "https://linkedsoftwaredependencies.org/bundles/npm/@janeirodigital/solid-redis-token-storage/^0.0.0/config/":  "config/",
+    "https://linkedsoftwaredependencies.org/bundles/npm/@janeirodigital/solid-redis-token-storage/^0.0.0/dist/":  "dist/"
+  },
+  "lsd:components": "dist/components/components.jsonld",
+  "lsd:contexts": {
+    "https://linkedsoftwaredependencies.org/bundles/npm/@janeirodigital/solid-redis-token-storage/^0.0.0/context.jsonld": "dist/components/context.jsonld"
+  },
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "npm run build:ts && npm run build:components",
+    "build:ts": "tsc",
+    "build:components": "componentsjs-generator -r solid-redis",
+    "clean": "rm -rf dist/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "solid",
+    "interop"
+  ],
+  "author": "Angel Araya <angel.araya@janeirodigital.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@inrupt/solid-client-authn-node": "^1.11.6",
+    "componentsjs-generator": "^3.0.0-beta.7",
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "redis": "^4.0.4"
+  }
+}
