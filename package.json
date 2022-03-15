@@ -17,7 +17,7 @@
   "scripts": {
     "build": "npm run build:ts && npm run build:components",
     "build:ts": "tsc",
-    "build:components": "componentsjs-generator -r solid-redis",
+    "build:components": "componentsjs-generator",
     "clean": "rm -rf dist/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
