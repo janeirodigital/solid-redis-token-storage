@@ -25,6 +25,11 @@
     "solid",
     "interop"
   ],
+  "files": [
+    "dist",
+    "components",
+    "src"
+  ],
   "author": "Angel Araya <angel.araya@janeirodigital.com>",
   "license": "MIT",
   "devDependencies": {
