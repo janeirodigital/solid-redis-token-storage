@@ -1,6 +1,6 @@
 {
   "name": "@janeirodigital/solid-redis-token-storage",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Redis backed storage for solid-client-authn-js",
   "main": "dist/index.js",
   "lsd:module": "https://linkedsoftwaredependencies.org/bundles/npm/@janeirodigital/solid-redis-token-storage/^0.0.0/components/context.jsonld",
