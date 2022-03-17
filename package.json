@@ -3,15 +3,15 @@
   "version": "0.0.4",
   "description": "A Redis backed storage for solid-client-authn-js",
   "main": "dist/index.js",
-  "lsd:module": "https://linkedsoftwaredependencies.org/bundles/npm/@janeirodigital/solid-redis-token-storage/^0.0.0/components/context.jsonld",
+  "lsd:module": "https://linkedsoftwaredependencies.org/bundles/npm/@janeirodigital/solid-redis-token-storage",
+  "lsd:components": "dist/components/components.jsonld",
+  "lsd:contexts": {
+    "https://linkedsoftwaredependencies.org/bundles/npm/@janeirodigital/solid-redis-token-storage/^0.0.0/components/context.jsonld": "dist/components/context.jsonld"
+  },
   "lsd:importPaths": {
     "https://linkedsoftwaredependencies.org/bundles/npm/@janeirodigital/solid-redis-token-storage/^0.0.0/components/": "dist/components/",
     "https://linkedsoftwaredependencies.org/bundles/npm/@janeirodigital/solid-redis-token-storage/^0.0.0/config/": "config/",
     "https://linkedsoftwaredependencies.org/bundles/npm/@janeirodigital/solid-redis-token-storage/^0.0.0/dist/": "dist/"
-  },
-  "lsd:components": "dist/components/components.jsonld",
-  "lsd:contexts": {
-    "https://linkedsoftwaredependencies.org/bundles/npm/@janeirodigital/solid-redis-token-storage/^0.0.0/context.jsonld": "dist/components/context.jsonld"
   },
   "types": "dist/index.d.ts",
   "scripts": {
@@ -28,6 +28,7 @@
   "files": [
     "dist",
     "components",
+    "config",
     "src"
   ],
   "author": "Angel Araya <angel.araya@janeirodigital.com>",
