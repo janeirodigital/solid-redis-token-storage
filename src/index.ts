@@ -5,8 +5,17 @@ export class RedisSolidStorage implements IStorage {
     private client;
     private static _instance: RedisSolidStorage;
 
-    private constructor() {
-        this.client = createClient();
+    private constructor(
+        private host?: string,
+        private port?: string,
+    ) {
+
+        const url = `redis://${host || 'localhost'}:${ port || 6379}`
+
+        this.client = createClient({
+            url,
+        });
+
         this.client.on("error", (err: Error) => {
             throw new Error(`Error connecting to redis backend: ${err.message}`);
         });
