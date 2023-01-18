@@ -1,6 +1,6 @@
 {
   "name": "@janeirodigital/solid-redis-token-storage",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A Redis backed storage for solid-client-authn-js",
   "lsd:module": true,
   "main": "dist/index.js",
