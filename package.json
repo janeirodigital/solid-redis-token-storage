@@ -2,23 +2,14 @@
   "name": "@janeirodigital/solid-redis-token-storage",
   "version": "0.0.6",
   "description": "A Redis backed storage for solid-client-authn-js",
+  "lsd:module": true,
   "main": "dist/index.js",
-  "lsd:module": "https://linkedsoftwaredependencies.org/bundles/npm/@janeirodigital/solid-redis-token-storage",
-  "lsd:components": "dist/components/components.jsonld",
-  "lsd:contexts": {
-    "https://linkedsoftwaredependencies.org/bundles/npm/@janeirodigital/solid-redis-token-storage/^0.0.0/components/context.jsonld": "dist/components/context.jsonld"
-  },
-  "lsd:importPaths": {
-    "https://linkedsoftwaredependencies.org/bundles/npm/@janeirodigital/solid-redis-token-storage/^0.0.0/components/": "dist/components/",
-    "https://linkedsoftwaredependencies.org/bundles/npm/@janeirodigital/solid-redis-token-storage/^0.0.0/config/": "config/",
-    "https://linkedsoftwaredependencies.org/bundles/npm/@janeirodigital/solid-redis-token-storage/^0.0.0/dist/": "dist/"
-  },
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "npm run clean && npm run build:ts && npm run build:components",
     "build:ts": "tsc",
-    "build:components": "componentsjs-generator",
-    "clean": "rm -rf dist/",
+    "build:components": "componentsjs-generator -s dist",
+    "clean": "rm -rf dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

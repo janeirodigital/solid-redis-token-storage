@@ -1,4 +1,3 @@
 {
-  "prefix": "solid-redis",
-  "destination": "dist/components"
+  "prefix": "solid-redis"
 }
