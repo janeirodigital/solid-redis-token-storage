@@ -5,7 +5,7 @@ export class RedisSolidStorage implements IStorage {
     private client;
     private static _instance: RedisSolidStorage;
 
-    private constructor(
+    public constructor(
         host?: string,
         port?: string,
     ) {
@@ -20,15 +20,6 @@ export class RedisSolidStorage implements IStorage {
             throw new Error(`Error connecting to redis backend: ${err.message}`);
         });
         this.client.connect();
-    }
-
-    public static get instance(): RedisSolidStorage {
-        if (this._instance) {
-            return this._instance;
-        }
-
-        this._instance = new RedisSolidStorage();
-        return this._instance;
     }
 
     async delete(key: string): Promise<void> {
